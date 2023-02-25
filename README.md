@@ -159,6 +159,10 @@ Besides, We provide a notebook [here](./demo/demo-inference-with-pytorch.ipynb) 
 ```shell script
 conda install pytorch torchvision cudatoolkit=11.1 -c pytorch -c conda-forge
 ```
+For me the pytorch installed by above command doesn't detect cuda, I had to use:
+```shell script
+pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu116
+```
 
 3. Clone this repository
 
